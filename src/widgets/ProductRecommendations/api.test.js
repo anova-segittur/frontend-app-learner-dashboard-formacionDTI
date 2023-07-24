@@ -1,5 +1,6 @@
 import { get, stringifyUrl } from 'data/services/lms/utils';
-import api, { productRecommendationsUrl } from './api';
+
+import api, { crossProductAndAmplitudeRecommendationsUrl, amplitudeRecommendationsUrl, recommendationsContextUrl } from './api';
 
 jest.mock('data/services/lms/utils', () => ({
   stringifyUrl: (...args) => ({ stringifyUrl: args }),
@@ -7,10 +8,26 @@ jest.mock('data/services/lms/utils', () => ({
 }));
 
 describe('productRecommendationCourses api', () => {
-  describe('fetchProductRecommendations', () => {
+  describe('fetchCrossProductRecommendations', () => {
     it('calls get with the correct recommendation courses URL', () => {
-      expect(api.fetchProductRecommendations('CourseRunKey')).toEqual(
-        get(stringifyUrl(productRecommendationsUrl('CourseRunKey'))),
+      expect(api.fetchCrossProductRecommendations('CourseRunKey')).toEqual(
+        get(stringifyUrl(crossProductAndAmplitudeRecommendationsUrl('CourseRunKey'))),
+      );
+    });
+  });
+
+  describe('fetchAmplitudeRecommendations', () => {
+    it('calls get with the correct recommendation courses URL', () => {
+      expect(api.fetchAmplitudeRecommendations()).toEqual(
+        get(stringifyUrl(amplitudeRecommendationsUrl())),
+      );
+    });
+  });
+
+  describe('fetchRecommendationsContext', () => {
+    it('calls get with the correct recommendation courses URL', () => {
+      expect(api.fetchRecommendationsContext()).toEqual(
+        get(stringifyUrl(recommendationsContextUrl())),
       );
     });
   });
