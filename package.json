@@ -28,9 +28,9 @@
   "dependencies": {
     "@edx/brand": "npm:@edx/brand-edx.org@^2.0.3",
     "@edx/browserslist-config": "^1.1.0",
-    "@edx/frontend-component-footer": "^12.0.0",
-    "@edx/frontend-enterprise-hotjar": "^1.2.0",
-    "@edx/frontend-platform": "^4.2.0",
+    "@edx/frontend-component-footer": "12.1.2",
+    "@edx/frontend-enterprise-hotjar": "1.4.0",
+    "@edx/frontend-platform": "4.6.0",
     "@edx/paragon": "^20.44.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -78,10 +78,10 @@
     "whatwg-fetch": "^3.6.2"
   },
   "devDependencies": {
-    "@edx/frontend-build": "12.8.27",
+    "@edx/frontend-build": "12.8.60",
     "@edx/reactifex": "^2.1.1",
     "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.1.0",
+    "@testing-library/react": "12.1.5",
     "@wojtekmaj/enzyme-adapter-react-17": "0.8.0",
     "axios-mock-adapter": "^1.20.0",
     "copy-webpack-plugin": "^11.0.0",
