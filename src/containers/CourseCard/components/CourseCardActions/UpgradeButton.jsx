@@ -26,13 +26,13 @@ export const UpgradeButton = ({ cardId }) => {
   const enabledProps = {
     as: 'a',
     href: upgradeUrl,
-    onClick: trackUpgradeClick,
-    style: 'display:none',  
+    onClick: trackUpgradeClick,  
   };
   return (
     <ActionButton
       iconBefore={Locked}
       variant="outline-primary"
+      style="display:none"
       disabled={disableUpgradeCourse}
       {...!disableUpgradeCourse && enabledProps}
     >
