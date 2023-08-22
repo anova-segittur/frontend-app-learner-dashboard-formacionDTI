@@ -27,6 +27,7 @@ export const UpgradeButton = ({ cardId }) => {
     as: 'a',
     href: upgradeUrl,
     onClick: trackUpgradeClick,
+    style: 'display:none',  
   };
   return (
     <ActionButton
