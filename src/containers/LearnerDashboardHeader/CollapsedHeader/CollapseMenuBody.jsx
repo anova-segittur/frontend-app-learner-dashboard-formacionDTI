@@ -34,9 +34,8 @@ export const CollapseMenuBody = ({ isOpen }) => {
         </Button>
         <Button
           as="a"
-          href={urls.baseAppUrl(courseSearchUrl)}
+          href="http://pre.formaciondti.org"
           variant="inverse-primary"
-          onClick={exploreCoursesClick}
         >
           {formatMessage(messages.discoverNew)}
         </Button>

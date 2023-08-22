@@ -44,10 +44,9 @@ export const ExpandedHeader = () => {
         </Button>
         <Button
           as="a"
-          href={urls.baseAppUrl(courseSearchUrl)}
+          href="http://pre.formaciondti.org"
           variant="inverse-primary"
           className="p-4"
-          onClick={exploreCoursesClick}
         >
           {formatMessage(messages.discoverNew)}
         </Button>
