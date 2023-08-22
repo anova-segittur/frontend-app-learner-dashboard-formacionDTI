@@ -29,12 +29,9 @@ export const CollapseMenuBody = ({ isOpen }) => {
         <Button as="a" href="/" variant="inverse-primary">
           {formatMessage(messages.course)}
         </Button>
-        <Button as="a" href={urls.programsUrl} variant="inverse-primary">
-          {formatMessage(messages.program)}
-        </Button>
         <Button
           as="a"
-          href="http://pre.formaciondti.org"
+          href={urls.baseAppUrl(courseSearchUrl)}
           variant="inverse-primary"
         >
           {formatMessage(messages.discoverNew)}
