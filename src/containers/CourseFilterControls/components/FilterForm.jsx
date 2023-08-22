@@ -12,7 +12,6 @@ export const filterOrder = [
   FilterKeys.notStarted,
   FilterKeys.done,
   FilterKeys.notEnrolled,
-  FilterKeys.upgraded,
 ];
 
 export const FilterForm = ({
